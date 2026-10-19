@@ -1,0 +1,18 @@
+#
+# SPDX-FileCopyrightText: 2025 René Moll
+# SPDX-License-Identifier: CC0-1.0
+#
+
+---
+BasedOnStyle: Chromium
+AccessModifierOffset: -4
+AllowShortFunctionsOnASingleLine: Empty
+BreakBeforeBraces: Mozilla
+BreakConstructorInitializers: BeforeComma
+ColumnLimit: 120
+IndentWidth: 4
+InsertBraces: true
+PackConstructorInitializers: Never
+SortIncludes: CaseInsensitive
+TabWidth: 4
+UseTab: Always

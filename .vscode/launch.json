@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "nucleo-f429zi-iks01a2 (debug)(openocd)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "device": "STM32F4x",
+            "configFiles": [
+                "board/st_nucleo_f4.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/etc/STM32F429.svd",
+            "executable": "${workspaceRoot}/build/ninja-debug/examples/nucleo-f429zi-iks01a2/nucleo-f429zi-iks01a2.elf",
+            "runToEntryPoint": "main",
+            "preResetCommands": [
+                "load",
+                "enable breakpoint",
+                "monitor reset"
+            ],
+        },
+        {
+            "name": "nucleo-f429zi-iks01a2 (debug)(remote gdb)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "external",
+            "gdbPath": "arm-none-eabi-gdb",
+            "gdbTarget": "${input:gdbHost}:3333",
+            "svdFile": "${workspaceRoot}/etc/STM32F429.svd",
+            "executable": "${workspaceRoot}/build/ninja-debug/examples/nucleo-f429zi-iks01a2/nucleo-f429zi-iks01a2.elf",
+            "runToEntryPoint": "main",
+            "postRestartCommands": [
+                "break main",
+                "continue"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "gdbHost",
+            "type": "promptString",
+            "description": "Host to connect to",
+            "default": "<remote>"
+        }
+    ]
+}

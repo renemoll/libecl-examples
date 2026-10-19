@@ -1,0 +1,26 @@
+#
+# SPDX-FileCopyrightText: 2026 René Moll
+# SPDX-License-Identifier: CC0-1.0
+#
+
+version = 1
+
+[[annotations]]
+path = [
+    ".adr-dir",
+    ".cppcheck_suppressions",
+    ".devcontainer/*",
+    ".gitattributes",
+    ".gitignore",
+    ".gitmodules",
+    ".pre-commit-config.yaml",
+    ".vscode/*",
+    "cmake/bob-cmake/*.md",
+    "doc/**",
+    "README.md",
+    "CMakePresets.json",
+    "cmake/*.json",
+    "_tmp_/**"
+]
+SPDX-FileCopyrightText = "2026 René Moll"
+SPDX-License-Identifier = "CC0-1.0"

@@ -1,0 +1,8 @@
+#
+# SPDX-FileCopyrightText: 2025 René Moll
+# SPDX-License-Identifier: CC0-1.0
+#
+
+CompileFlags:
+  CompilationDatabase: build/ninja-debug
+  Add: [-std=c++20, -Iexternal/libecl/libecl/include]

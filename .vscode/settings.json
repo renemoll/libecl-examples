@@ -1,0 +1,6 @@
+{
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.default.cppStandard": "c++20",
+    "C_Cpp.default.cStandard": "c17",
+    "cortex-debug.variableUseNaturalFormat": false
+}

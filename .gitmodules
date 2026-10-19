@@ -1,0 +1,15 @@
+[submodule "external/stm32f4xx-hal-driver"]
+	path = external/stm32f4xx-hal-driver
+	url = https://github.com/STMicroelectronics/stm32f4xx-hal-driver.git
+[submodule "external/cmsis-device-f4"]
+	path = external/cmsis-device-f4
+	url = https://github.com/STMicroelectronics/cmsis-device-f4.git
+[submodule "external/CMSIS_5"]
+	path = external/CMSIS_5
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "external/libecl"]
+	path = external/libecl
+	url = https://github.com/renemoll/libecl.git
+[submodule "cmake/bob-cmake"]
+	path = cmake/bob-cmake
+	url = https://github.com/renemoll/bob-cmake.git
